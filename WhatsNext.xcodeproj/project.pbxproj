@@ -11,6 +11,10 @@
 		81E3E31528B2A3D100163F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3E31428B2A3D100163F38 /* ContentView.swift */; };
 		81E3E31728B2A3D800163F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E3E31628B2A3D800163F38 /* Assets.xcassets */; };
 		81E3E31A28B2A3D800163F38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E3E31928B2A3D800163F38 /* Preview Assets.xcassets */; };
+		81E3E32228B2AB0700163F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3E32128B2AB0700163F38 /* AppDelegate.swift */; };
+		81E3E32528B2B78900163F38 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3E32428B2B78900163F38 /* Date-Helper.swift */; };
+		81E3E32728B2B96900163F38 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3E32628B2B96900163F38 /* EventRow.swift */; };
+		81E3E32928B2B9FD00163F38 /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3E32828B2B9FD00163F38 /* EventSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		81E3E31628B2A3D800163F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E3E31928B2A3D800163F38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81E3E31B28B2A3D800163F38 /* WhatsNext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsNext.entitlements; sourceTree = "<group>"; };
+		81E3E32128B2AB0700163F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81E3E32328B2B50400163F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81E3E32428B2B78900163F38 /* Date-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
+		81E3E32628B2B96900163F38 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		81E3E32828B2B9FD00163F38 /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +61,13 @@
 		81E3E31128B2A3D100163F38 /* WhatsNext */ = {
 			isa = PBXGroup;
 			children = (
+				81E3E32328B2B50400163F38 /* Info.plist */,
 				81E3E31228B2A3D100163F38 /* WhatsNextApp.swift */,
 				81E3E31428B2A3D100163F38 /* ContentView.swift */,
+				81E3E32628B2B96900163F38 /* EventRow.swift */,
+				81E3E32828B2B9FD00163F38 /* EventSection.swift */,
+				81E3E32428B2B78900163F38 /* Date-Helper.swift */,
+				81E3E32128B2AB0700163F38 /* AppDelegate.swift */,
 				81E3E31628B2A3D800163F38 /* Assets.xcassets */,
 				81E3E31B28B2A3D800163F38 /* WhatsNext.entitlements */,
 				81E3E31828B2A3D800163F38 /* Preview Content */,
@@ -139,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E3E32228B2AB0700163F38 /* AppDelegate.swift in Sources */,
 				81E3E31528B2A3D100163F38 /* ContentView.swift in Sources */,
+				81E3E32728B2B96900163F38 /* EventRow.swift in Sources */,
 				81E3E31328B2A3D100163F38 /* WhatsNextApp.swift in Sources */,
+				81E3E32928B2B9FD00163F38 /* EventSection.swift in Sources */,
+				81E3E32528B2B78900163F38 /* Date-Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +292,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsNext/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need to read your calendars to show upcoming events";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +321,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsNext/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need to read your calendars to show upcoming events";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
